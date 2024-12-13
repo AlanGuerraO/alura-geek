@@ -1,0 +1,16 @@
+{
+  "productos": [
+    {
+      "id": "ef56",
+      "nombre": "GameBoy Advanced",
+      "precio": "434",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Game-Boy-FL.png"
+    },
+    {
+      "id": "9ddb",
+      "nombre": "Calculadora cientifica fx-82MS",
+      "precio": "126",
+      "imagen": "https://www.edu-casio.es/wp-content/uploads/2019/07/82ms2_v2.png"
+    }
+  ]
+}
