@@ -13,13 +13,13 @@
 /* Estilos globales */
 h1, h2{
     font-family: var(--font-titulo);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 /* Estilos del header */
 .header {
-    height: 96px;
+    height: 6rem;
     background: var(--color-primario);
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ h1, h2{
 }
 
 .header__imagen {
-    height: 56px;
+    height: 3.5rem;
 }
 
 .header__titulo2 {
@@ -45,22 +45,23 @@ h1, h2{
 /* Estilos del main */
 .main {
     display: flex;
-    padding: 50px 30px;
-    gap: 70px;
+    padding: 3.125rem 1.875rem;
+    gap: 4.375rem;
+    justify-content: center;
 }
 
 /* Sección de productos */
 .seccion__productos {
     height: auto;
     width: 100%; 
-    max-width: 758px;
+    max-width: 47.375rem;
     margin: 0 auto;
 }
 
 .productos__lista {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.625rem;
     justify-content: center;
     list-style: none;
     margin: 0;
@@ -68,16 +69,16 @@ h1, h2{
 }
 
 .card {
-    border: 3px solid #000;
-    border-radius: 20px;
+    border: 0.1875rem solid #000;
+    border-radius: 1.25rem;
     background: var(--color-card);
-    width: 196px;
-    height: 268px;
+    width: 12.25rem;
+    height: 16.75rem;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.625rem;
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
@@ -87,24 +88,24 @@ h1, h2{
 }
 
 .card img {
-    width: 176px;
-    height: 174px;
+    width: 11rem;
+    height: 10.875rem;
     object-fit: cover;
-    border-radius: 8px;
-    padding-bottom: 10px; 
+    border-radius: 0.5rem;
+    padding-bottom: 0.625rem; 
 }
 
 .card-container--info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125rem;
     flex-grow: 1;
 }
 
 .card-nombre {
     font-family: var(--font-texto);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -120,18 +121,18 @@ h1, h2{
 
 .card-container--value p {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .card-container--value img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     cursor: pointer; 
 }
 
 .mensaje-vacio {
     font-family: var(--font-texto);
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
     color: red;
 }
@@ -141,20 +142,21 @@ h1, h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 472px;
+    width: 29.5rem;
+    margin: 0 auto;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .formulario__input{
-    width: 392px;
-    padding: 10px;
-    border: 3px solid var(--color-secundario);
-    border-radius: 20px;
+    width: 24.5rem;
+    padding: 0.625rem;
+    border: 0.1875rem solid var(--color-secundario);
+    border-radius: 1.25rem;
     font-family: var(--font-texto);
     color: var(--color-secundario);
     font-weight: 600;
@@ -172,10 +174,10 @@ h1, h2{
 }
 
 .formulario__boton {
-    width: 188px;
-    height: 55px;
-    border: 3px solid var(--color-secundario);
-    border-radius: 20px;
+    width: 11.75rem;
+    height: 3.4375rem;
+    border: 0.1875rem solid var(--color-secundario);
+    border-radius: 1.25rem;
     background: var(--color-secundario);
     color: #fff;
     font-weight: 500;
@@ -191,10 +193,10 @@ h1, h2{
 /* Estilos del footer */
 .footer {
     height: auto;
-    padding: 20px;
+    padding: 1.25rem;
     background: var(--color-primario);
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .footer__logo {
@@ -205,7 +207,7 @@ h1, h2{
 }
 
 .footer__logo--imagen {
-    height: 56px;
+    height: 3.5rem;
     margin: 0;
 }
 
@@ -217,7 +219,7 @@ h1, h2{
 .footer__texto {
     font-family: var(--font-texto);
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -230,4 +232,78 @@ h1, h2{
 
 .footer__empresa {
     font-weight: 200;
+}
+
+/* Version para pantallas pequeñas */
+@media (max-width: 768px) {
+    body, html {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden; /* Evita el scroll horizontal en toda la página */
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .seccion__formulario {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .formulario__input {
+        width: 80vw;
+        box-sizing: border-box;
+    }
+
+    .formulario__botones {
+        gap: 5px;
+        width: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .formulario__boton {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 10rem; /* Límite para que no se haga más grande */
+        height: 14rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin-bottom: 1.25rem; /* Reduce el espacio entre tarjetas */
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        max-height: 8rem;
+        object-fit: cover;
+    }
+
+    .card-container--value img {
+        width: 1.25rem; /* Asegura que el ícono de trash no se haga grande */
+        height: 1.25rem;
+        object-fit: contain;
+    }
+
+    .productos__lista {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }
